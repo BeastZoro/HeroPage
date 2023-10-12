@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Lobster+Two:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #2f1893;
+  --secondary: #e93a7d;
+  --text: #ffffff;
+}
+
+.container {
+  padding-inline: 80px;
+}
+
+.hero {
+  background-color: var(--primary);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+/* #####################navbar styles########################### */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+}
+
+.navbar .logo {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.navbar .navlinks {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.navlinks li a {
+  color: var(--text);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.navlinks li:nth-child(1) > a {
+  color: gray;
+}
+
+.navlinks li:nth-last-child(1) {
+  background-color: var(--secondary);
+  padding: 7px 20px;
+  border-radius: 50px;
+}
+
+/* ######################hero_content styles################### */
+
+.hero_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 80px; */
+  min-height: 80vh;
+}
+
+.hero_text {
+  max-width: 450px;
+}
+
+.hero_text h2 {
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.hero_text p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 10px 0 40px 0;
+}
+
+.hero_text button {
+  background-color: var(--secondary);
+  font-size: 1.1rem;
+  padding: 12px 27px;
+  border: 0;
+  border-radius: 50px;
+  color: var(--text);
+  text-transform: capitalize;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.signup {
+  background-color: #ebeaed;
+  width: min(90%, 470px);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.signup h3 {
+  color: #1e0e62;
+  text-transform: capitalize;
+  line-height: 52px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.signup_form .input {
+  border: 1px solid gray;
+  border-radius: 50px;
+  width: 330px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.input > input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-indent: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #151439;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: gray;
+}
+
+input[type="checkbox"] {
+  accent-color: #25dac5;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.social_signin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.social_signin button {
+  width: 330px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  border-radius: 50px;
+  color: var(--text);
+  border: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.social_signin .signin {
+  background-color: var(--primary);
+}
+
+.social_signin .twitter_signin {
+  background-color: #1da1f2;
+}
+
+.social_signin p {
+  color: gray;
+  text-align: center;
+  padding: 0 7px;
+  position: relative;
+  z-index: 10;
+}
+
+.social_signin p::after,
+.social_signin p::before {
+  content: "";
+  width: 42%;
+  height: 2px;
+  background-color: gray;
+  position: absolute;
+  top: 50%;
+}
+
+.social_signin p::after {
+  right: 0;
+}
+
+.social_signin p::before {
+  left: 0;
+}
+
+.form_foot {
+  color: gray;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 10px 0;
+}
+
+.form_foot a {
+  text-decoration: none;
+  color: #25dac5;
+}
+
+
+@media screen and ( max-width : 1068px) {
+    .hero_content{
+        margin: 100px 0;
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 0;
+    }
+}
