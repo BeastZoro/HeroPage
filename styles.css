@@ -49,6 +49,7 @@
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .navlinks li:nth-child(1) > a {
